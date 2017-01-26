@@ -13,8 +13,7 @@ function generateSimpleGallery() {
         builtImagesListString = new String(),
         galleryItemTemplate,
         indexFileContent,
-        finalCallback,
-        initialFile;
+        finalCallback;
 
     const transform = function (file, enc, callback) {
         basePath = file.base;
@@ -46,9 +45,7 @@ function generateSimpleGallery() {
             contents: new Buffer(fixedIndexFile)
         });
 
-        self.push(modifiedFile);
-
-        finalCallback(null, initialFile);
+        finalCallback(null, modifiedFile);
     };
 
     return through.obj(transform);
