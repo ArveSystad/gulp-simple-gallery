@@ -1,6 +1,6 @@
 {
   "name": "gulp-simple-gallery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "dependencies": {},
@@ -12,6 +12,7 @@
   },
   "author": "Arve Systad (http://asystad.net)",
   "license": "ISC",
+  "homepage": "https://github.com/ArveSystad/gulp-simple-gallery",
   "keywords": [
     "gulpplugin", "static", "gallery", "image", "generator"
   ]
