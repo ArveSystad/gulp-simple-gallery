@@ -11,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arve Systad (http://asystad.net)",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "gulpplugin", "static", "gallery", "image", "generator"
+  ]
 }
