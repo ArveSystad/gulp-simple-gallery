@@ -3,7 +3,9 @@
   "version": "1.0.4",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "through2": "2.x"
+  },
   "devDependencies": {
     "gulp": "^3.9.1"
   },
