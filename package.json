@@ -1,17 +1,15 @@
 {
-  "name": "simple-gallery",
+  "name": "gulp-simple-gallery",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-changed": "^1.3.2",
-    "gulp-clean": "^0.3.2"
+    "gulp": "^3.9.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Arve Systad (http://asystad.net)",
   "license": "ISC"
 }

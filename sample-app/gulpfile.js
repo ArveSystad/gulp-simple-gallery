@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const clean = require('gulp-clean');
 const changed = require('gulp-changed');
-const gallery = require('./generateSimpleGallery');
+const gallery = require('./../index');
 
 const DEST = "dist";
 const IMAGEDEST = DEST + "/images";
@@ -12,13 +12,13 @@ gulp.task('clean:html', function() {
 });
 
 gulp.task('createGalleryIndex', ['clean:html', 'copyImages'], function() {
-    return gulp.src('app/index.html')
+    return gulp.src('index.html')
                .pipe(gallery())
                .pipe(gulp.dest(DEST));
 });
 
 gulp.task('copyImages', function() {
-    return gulp.src('app/images/**')
+    return gulp.src('images/**')
                .pipe(changed(IMAGEDEST))
                .pipe(gulp.dest(IMAGEDEST));
 });

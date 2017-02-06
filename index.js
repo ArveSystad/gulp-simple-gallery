@@ -1,13 +1,11 @@
 const through = require('through2');
-const gutil = require('gulp-util');
 const fs = require('fs');
 const Vinyl = require('vinyl');
-const PluginError = gutil.PluginError;
 
 // Consts
-const PLUGIN_NAME = 'gulp-generateSimpleGallery';
+const PLUGIN_NAME = 'gulp-simple-gallery';
 
-function generateSimpleGallery() {
+function simpleGallery() {
     let self,
         basePath,
         builtImagesListString = new String(),
@@ -51,4 +49,4 @@ function generateSimpleGallery() {
     return through.obj(transform);
 }
 
-module.exports = generateSimpleGallery;
+module.exports = simpleGallery;
