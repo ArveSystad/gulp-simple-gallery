@@ -1,13 +1,10 @@
-'use strict';
+"use strict";
 
-const through = require('through2');
-const fs = require('fs');
-const Vinyl = require('vinyl');
+const through = require("through2");
+const fs = require("fs");
+const Vinyl = require("vinyl");
 
-// Consts
-const PLUGIN_NAME = 'gulp-simple-gallery';
-
-function simpleGallery() {
+module.exports = function() {
     let self,
         basePath,
         builtImagesListString = new String(),
@@ -20,7 +17,7 @@ function simpleGallery() {
         self = this;
 
         fs.readFile(file.path, "utf-8", buildGallery);
-        initialFile = file;
+        
         finalCallback = callback;
     };
 
@@ -49,6 +46,4 @@ function simpleGallery() {
     };
 
     return through.obj(transform);
-}
-
-module.exports = simpleGallery;
+};
