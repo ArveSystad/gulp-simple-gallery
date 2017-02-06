@@ -1,3 +1,5 @@
+'use strict';
+
 const through = require('through2');
 const fs = require('fs');
 const Vinyl = require('vinyl');
