@@ -1,10 +1,12 @@
 {
   "name": "gulp-simple-gallery",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "through2": "2.x"
+    "fs": "0.0.1-security",
+    "through2": "^2.0.3",
+    "vinyl": "^2.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
@@ -12,10 +14,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArveSystad/gulp-simple-gallery.git"
+  },
   "author": "Arve Systad (http://asystad.net)",
   "license": "ISC",
   "homepage": "https://github.com/ArveSystad/gulp-simple-gallery",
   "keywords": [
-    "gulpplugin", "static", "gallery", "image", "generator"
+    "gulpplugin",
+    "static",
+    "gallery",
+    "image",
+    "generator"
   ]
 }
